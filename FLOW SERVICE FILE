@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>FLOW-SERVICE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>FLOW-SERVICE</h1>
+  </header>
+
+  <main>
+    <section class="card" onclick="toggleServices()">
+      <h2>خدماتنا</h2>
+      <ul id="services" style="display: none;">
+        <li>📄 تصوير الوثائق</li>
+        <li>💡 تسهيلات الأداء (أمان، الماء، الكهرباء)</li>
+        <li>📲 تعبئة و تحويل رصيد (Orange, Inwi, IAM)</li>
+        <li>🧾 أداء الفواتير (اتصالات، الماء، الكهرباء...)</li>
+        <li>📚 أدوات مدرسية (دفاتر، كتب، أقلام...)</li>
+        <li>🛑 مواعيد خدمة المراكز (Service des Mines)</li>
+        <li>📄 وكالات و عقود و التزامات</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>اتصل بنا</h2>
+      <p>📧 service.flow.damancash@gmail.com</p>
+      <p>📞 0678227121</p>
+    </section>
+  </main>
+
+  <script>
+    function toggleServices() {
+      const list = document.getElementById('services');
+      list.style.display = list.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
